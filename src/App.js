@@ -88,6 +88,7 @@ function App() {
       <p className="p-center p-bottom-15 color-theme">
         <a
           className="color-theme"
+          rel="noopener noreferrer"
           href="https://github.com/Sergioamjr/react-hooks-examples"
           target="_blank"
         >
