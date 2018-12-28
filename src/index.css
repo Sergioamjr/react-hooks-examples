@@ -6,6 +6,14 @@
   --theme: #66819a;
 }
 
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,8 +43,11 @@ body {
 
 .max-width-container {
   max-width: var(--maxWidthContainer);
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.title {
+  padding-top: 30px;
 }
 
 input {
@@ -61,7 +72,11 @@ input {
   margin-bottom: 15px;
 }
 
-.m-bottom-40 {
+.p-bottom-15 {
+  padding-bottom: 15px;
+}
+
+.m-bottom-30 {
   margin-bottom: 30px;
 }
 
