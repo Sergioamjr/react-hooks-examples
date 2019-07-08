@@ -9,8 +9,8 @@ function App() {
   const [search, setSearch] = useState();
   const [hasError, setErrors] = useState(false);
 
-  useEffect(
-    async () => {
+  useEffect(() => {
+    async function fetchData() {
       try {
         setLoading(true);
         const { photos } = await fetchPhotos(search);
@@ -20,9 +20,9 @@ function App() {
         setErrors(true);
         setLoading(false);
       }
-    },
-    [search]
-  );
+    }
+    fetchData();
+  }, [search]);
 
   const updateSearchHandler = ({ target: { value } }) => {
     clearInterval(debounce);
